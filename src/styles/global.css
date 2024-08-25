@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  background: url("/public/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.header {
+  background: rgb(255, 155, 5);
+  padding: 25px 0;
+  padding-bottom: 10px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+
+.header li {
+  margin-right: 35px;
+}
+
+.header li a {
+  font-family: "Open Sans", sans-serif;
+  color: #101016;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.header li a.active {
+  text-decoration: overline;
+}
+
+.header p {
+  position: absolute;
+  font-family: "Amita", sans-serif;
+  left: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  top: 5px;
+  color: #000;
+}
+
+.icons {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  display: inline;
+}
+
+.icons img {
+  border-radius: 50%;
+}
+
+.linkedin {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.github {
+  width: 55px;
+  margin-bottom: 2px;
+}

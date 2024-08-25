@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  color: #fff;
+  background: url("/public/about.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.home-page {
+  min-height: 100vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px; /* Increased padding for breathing space */
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced text shadow for depth */
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Slightly darker background for more contrast */
+  padding: 40px;
+  border-radius: 25px; /* More rounded corners for a modern look */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Deeper shadow for a floating effect */
+  max-width: 900px; /* Increased max-width */
+  margin: 0 auto 50px auto;
+}
+
+.about-photo {
+  border-radius: 50%;
+  width: 160px; /* Slightly larger photo */
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 25px; /* Increased space below the photo */
+  border: 8px solid #ffd700; /* Gold border for a touch of elegance */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow for depth */
+  transition: transform 0.4s ease; /* Smooth hover effect */
+}
+
+.about-photo:hover {
+  transform: scale(1.1); /* Slightly larger zoom on hover */
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2.8rem; /* Increased font size for emphasis */
+  color: #ffd700; /* Brighter gold color */
+  margin: 0 0 15px 0;
+  text-align: center;
+  font-weight: 800; /* Bolder font weight */
+  letter-spacing: 1px; /* More spaced-out letters */
+  position: relative;
+  line-height: 1.5;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px; /* Closer to the text */
+  width: 60%; /* Wider underline */
+  height: 4px; /* Thicker underline */
+  background: #ffd700;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+p {
+  font-size: 1.25rem; /* Increased font size for better readability */
+  line-height: 1.9; /* More relaxed line height */
+  color: #e0e0e0;
+  text-align: center;
+  max-width: 800px; /* Increased max-width */
+  margin: 0 auto;
+}
+
+p strong {
+  color: #ffd700;
+}
+
+.about-section,
+.hobbies {
+  margin-top: 50px; /* Increased top margin */
+  background: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+h3 {
+  font-size: 2.3rem; /* Larger font size */
+  color: #ffd700; /* Gold color for headings */
+  margin-bottom: 25px; /* Increased bottom margin */
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.7px; /* More spaced-out letters */
+}
+
+.skills-list,
+.hobbies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Larger grid items */
+  gap: 25px; /* Increased gap between items */
+}
+
+.skills-list li,
+.hobbies {
+  font-size: 1.2rem; /* Larger text size */
+  color: #e0e0e0;
+  margin-bottom: 15px; /* Increased bottom margin */
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.skills-list li:hover {
+  color: #ffd700;
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+@media (max-width: 768px) {
+  .about-intro {
+    padding: 25px;
+  }
+
+  .about-photo {
+    margin-bottom: 20px;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+}
