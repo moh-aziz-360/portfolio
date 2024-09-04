@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
-        <img src="/public/mine.png" alt="" />
+        <img src="/mine.png" alt="" />
       </div>
       <div className="intro">
         <h3>Who am I ?</h3>
@@ -45,19 +45,19 @@ const Hero = () => {
         <h1>SKILLSET</h1>
         <ul>
           <li>
-            <img src="/public/html.png" alt="HTML" />
+            <img src="/html.png" alt="HTML" />
             <span>HTML</span>
           </li>
           <li>
-            <img src="/public/css.png" alt="CSS" />
+            <img src="/css.png" alt="CSS" />
             <span>CSS</span>
           </li>
           <li>
-            <img src="/public/js.png" alt="JavaScript" />
+            <img src="/js.png" alt="JavaScript" />
             <span>JAVASCRIPT</span>
           </li>
           <li>
-            <img src="/public/react.png" alt="React" />
+            <img src="/react.png" alt="React" />
             <span>REACT</span>
           </li>
         </ul>

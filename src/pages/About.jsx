@@ -7,12 +7,8 @@ const About = () => {
       <section className="about">
         <div className="container">
           <div className="about-intro">
-            <a href="/public/mine.png">
-              <img
-                src="/public/mine.png"
-                alt="Your Name"
-                className="about-photo"
-              />
+            <a href="/mine.png">
+              <img src="/mine.png" alt="Your Name" className="about-photo" />
             </a>
             <h2>About Me</h2>
             <p>
