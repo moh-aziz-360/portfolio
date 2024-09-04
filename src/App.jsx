@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./styles/global.css";
 import Home from "./pages/Home";
@@ -19,7 +18,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-      <Footer />
     </div>
   );
 };
