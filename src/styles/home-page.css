@@ -1,0 +1,42 @@
+/* Home page specific styles */
+.home-page {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Override global styles for home page */
+body.home-page-active {
+  overflow: hidden !important; /* Force no scrolling on home page */
+}
+
+/* Ensure hero section takes exactly one viewport height */
+.home-page .hero-section {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+/* Make content scrollable within the fixed height container */
+.home-page .hero-content {
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 125, 0, 0.5) rgba(255, 255, 255, 0.1);
+  padding-right: 1rem;
+}
+
+/* Scrollbar styling */
+.home-page .hero-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.home-page .hero-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.home-page .hero-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 125, 0, 0.5);
+  border-radius: 3px;
+}
