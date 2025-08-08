@@ -39,7 +39,7 @@ const About = () => {
           <div className="profile-details">
             <h2>Mohammed Abdul Aziz</h2>
             <p className="profile-tagline">
-              Front-Stack Web & Mobile App Developer
+              Full-Stack Web & Mobile App Developer
             </p>
             <p className="profile-description">
               Hello! I'm a dedicated web developer with a passion for crafting
